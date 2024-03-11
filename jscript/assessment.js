@@ -389,6 +389,7 @@
         function show_results() {
             $("#contents :input").attr("disabled", true);
             document.getElementById("nq1").readOnly = true;
+            document.getElementById("username").readOnly = true;
             hide_elements(["intro", "contents", "comment", "bottom-logo"])
             show_element("score-and-guidance")
             $("#comment-texts").html(show_element("comment"));
@@ -496,11 +497,6 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
-
-        document.getElementById("username").addEventListener("input", function() {
-            var username = this.value;
-            document.getElementById("watermark").innerText = username;
-          });
 
         /* ----------------------- Print --------------------- */
 
