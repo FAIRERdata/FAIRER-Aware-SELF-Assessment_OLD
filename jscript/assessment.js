@@ -190,24 +190,6 @@
             }
         }
 
-        /* ---------------- Update Comment ---------------- */
-        // Function to adjust the height of the textarea based on content
-        function adjustTextareaHeight(textarea) {
-            textarea.style.height = 'auto'; // Reset the height to auto
-            textarea.style.height = textarea.scrollHeight + 'px'; // Set the height to the scroll height
-        }
-            
-        // Get the textarea element
-        var textarea = document.getElementById('nq1');
-            
-        // Adjust the height initially
-        adjustTextareaHeight(textarea);
-            
-        // Attach input event listener to adjust height dynamically
-        textarea.addEventListener('input', function() {
-            adjustTextareaHeight(this);
-        });
-        
         /* ---------------- Update Intention --------------- */
         function update_intention(question) {
             update_print_letters(question);
