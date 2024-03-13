@@ -1,2 +1,2 @@
 # FAIRER-Aware
-development of a tool for self assessment of FAIRER principles awarness
+This tool is inspired by and builds upon the ]FAIR Aware self-assessment tool](https://fairaware.dans.knaw.nl/) 
